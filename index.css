@@ -1,3 +1,195 @@
-#heading1{
-    color: red;
+:root{
+    --green: rgba(43,211,18,1.5);
+    --red: rgba(193,79,69,1.5);
 }
+
+body{
+    font-family: "Hind Siliguri", sans-serif;
+    background-color: rgba(255, 255, 250, 0.75);
+}
+
+.user-card{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.3);
+}
+
+.logo{
+    width: 63px;
+    height: 90%;
+}
+
+.star-rating-logo{
+    border-radius: 50%;
+    padding: 2px;
+    color: white;
+}
+
+.res-rating{
+    display: flex;
+    flex-direction: row;
+}
+
+.res-logo{
+    width: 100%;
+    height: 60%;
+}
+
+.nav-items > ul{
+    font-size: 15px;
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav-items > ul >li{
+    margin-right: 32px;
+}
+
+.Search{
+    padding: 30px;;
+}
+
+.res-sla{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cost-for-two{
+    font-weight: 500;
+}
+
+.card-background{
+    background: linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 24px;
+}
+.card{
+    margin-bottom: 10px;
+    height: 210px;
+}
+.res-name{
+    margin-left: 11%;
+}
+.card-body{
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 7px;
+    margin: 20px;
+    border: 2.5px solid #f1f1f1;
+}
+.res-rating, .res-delivery-time, .cost-for-two{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.res-card{
+    width : 250px;
+    margin: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+    background-color: #FCF8F3;
+    margin-right: 20px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    height: 469px;
+    background-color: #f0f0f0;
+}
+
+
+
+.shimmer-img{
+    background-color: #e3dfdf;
+}
+
+.login-button{
+    cursor: pointer;
+    width: 100px;
+}
+
+a,Link{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.filter{
+    display: flex;
+}
+
+.res-card > img, .shimmer-img{
+    min-height: 250px;
+    box-shadow:  2px 4px 4px rgba(0, 0, 0, 0.25);
+    max-height: 199px;
+    min-height: 199px;
+}
+
+
+.shadow{
+    box-shadow:  2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.res-meta-data{
+    padding: 5px;
+}
+
+.res-meta-data>p{
+    margin: 0px;
+}
+.card-body>p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-bar>button {
+    border: none;
+    background-color: rgba(255, 165, 0, 0.75);
+    color: white;
+    height: 100%;
+}
+
+.search-bar>input{
+    height: 100%;
+    border: 1px solid orange;
+    margin-right: 7px;
+}
+
+.search-bar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.res-container{
+    padding: 10px 50px;
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+} 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
